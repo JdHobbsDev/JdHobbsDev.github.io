@@ -1,10 +1,9 @@
-
+/* Existing styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,7 +16,6 @@ body {
     animation: gradientShift 8s ease infinite;
 }
 
-
 .container {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
@@ -26,8 +24,8 @@ body {
     text-align: center;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     animation: fadeIn 2s ease forwards;
+    position: relative; /* Added to position the footer relative to this container */
 }
-
 
 h1 {
     font-size: 3.5rem;
@@ -36,13 +34,11 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 p {
     font-size: 1.25rem;
     margin-bottom: 30px;
     color: #333;
 }
-
 
 .button-82-pushable {
     position: relative;
@@ -139,4 +135,29 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px; /* Adjust this value to create space below the button */
+    width: 100%;
+    position: absolute; /* Ensures the footer is positioned relative to the container */
+    bottom: 10px; /* Adjust this value to set the distance from the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.contact-link {
+    color: #ff4e50; /* Link color matching button */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
